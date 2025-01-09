@@ -1,0 +1,84 @@
+							LA CONSOLA
+
+La consola es una zona del navegador ubicada en las DevTools, herramienta fundamental a la hora de trabajar con Javascript,
+donde podemos escribir código, observar resultados, revisar mensajes de información, errores, otros detalles y corregir los mismos.
+A la hora de trabajar en consola podemos observar todo lo que realicemos en la misma.
+
+
+						Atajos de teclado para ingresar a la consola
+
+CTRL + SHIFT + I
+CTRL + SHIFT + J
+F12 
+
+
+						METODOS EN LA CONSOLA
+
+console.log() - Este es el primer y el mas clásico, el cuál permite mostrar textos, operaciones numéricas, y con sus funciones permite añadir varios datos
+en una misma línea, separándolo por comas:
+
+console.log("Hola mundo"); // Ejemplo texto
+console.log(2 + 2); // Ejemplo operación numérica
+
+o colocar ambos datos en una sola línea:
+
+console.log("Hola mundo, mira este número: ", 10 + 20);
+
+
+						MENSAJES DE ERROR EN LA CONSOLA
+
+Además de console.log() que es uno de los más utilizados trabajando en la consola, existen mas, la consola tiene un sistema para filtrar por ejemplo
+mensajes de error, por ejemplo:
+
+console.error() - Muestra información del error del código, por lo general se muestra en color rojo.
+console.warn() - Muestra información de advertencias, ante posibles inconvenientes, por lo general se muestra en color amarillo.
+console.info() - Muestra un mensaje de información.
+console.debug() - Muestra información detallada.
+
+
+							LIMPIAR LA CONSOLA
+
+Existe el atajo de teclado para limpiar la consola CTRL + L sobre la consola de Javascript, limpia la pantalla, despeja y permite seguir trabajando.
+O también lo hacemos utilizando una función:
+
+console.clear() - Limpieza de consola
+
+
+							AGRUPAR MENSAJES
+
+Existe también un tipo de métodos para la agrupación de mensajes de consola, las funciones son:
+
+console.group() - Inicia una unión que se puede expandir con el texto que indicamos por parámetro.
+console.groupEnd() - Cierra el grupo de elementos.
+
+Colocandolo como ejemplo:
+
+console.group("Información por mostrar");
+console.log("UA: ", navigator.userAgent);
+console.log("Lang: ", navigator.language);
+console.groupEnd();
+
+
+							CONTADORES
+
+Se puede a través de la consola crear contadores. En la consola utilizando el código:
+
+for ( let = 0; i < 5; i++){
+ console.count("test-loop");	// Se inicia el contador
+}
+console.countEnd("test-loop");	// Finalizamos el contador
+
+
+						  TEST DE VELOCIDAD
+
+Existe un método que nos permite iniciar un test de velocidad, para verificar cuanto tarda en realizar una operación.
+
+console.time("test1");
+for ( let i = 0; i < 10; i++) {
+  console.log("test1", i);
+}
+console.timeEnd("test1);
+
+Con el método console.time() iniciamos dicho test, la operación que colocamos dentro del mismo que queremos que realice.
+console.timeLog() indica cuanto tiempo ha tardado en llegar hasta ese punto sin que se detenga el test.
+Y al final con console.timeEnd() lo terminamos.
