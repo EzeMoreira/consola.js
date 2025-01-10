@@ -37,3 +37,12 @@ console.groupEnd(); //Cierra el grupo de union de texto.
 console.group("Mostrar información de los textos");
 console.log("UA: ", navigator.userAgent, "Lang: ", navigator.language);
 console.groupEnd();
+
+
+
+//          Contadores
+
+for (let i = 0; i < 5; i++){
+    console.count("test-loop"); //Inicia el conteo
+}
+console.countEnd("test-loop");  //Finaliza el conteo
