@@ -55,6 +55,6 @@ console.groupEnd();
 
 console.time("test1");
 for (let i = 0; i < 10; i++){
-    console.log("test1", i);
+    console.timeLog("test1", i);
 }
     console.timeEnd("test1");
