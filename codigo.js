@@ -18,3 +18,9 @@ console.warn("Esta es una advertencia, práctica mas");
 console.info("Aquí aclaramos un texto que quieramos indicar al trabajar");
 
 console.debug("Este método se utiliza para registrar mensajes de depuracion de codigo, su proposito es que muestre mensajes utiles durante el desarrollo y depuracion del codigo");
+
+
+
+//          Limpieza de consola
+
+console.clear(); //Este mando lo podemos colocar tanto en el codigo como en la consola
