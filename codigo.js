@@ -58,3 +58,44 @@ for (let i = 0; i < 10; i++){
     console.timeLog("test1", i);
 }
     console.timeEnd("test1");
+
+
+
+//          Ejemplo extra de consola
+
+const materias = {
+    matematica: [90, 9, 3, "matematica"],    //1° parametro porcentaje de asistencia, 2° promedio, 3°TPS presentados
+    fisica: [85, 8, 5, "fisica"],
+    programacion: [80, 8, 8, "programacion"],
+    calculo: [75, 7, 5, "calculo"],
+    baseDeDatos: [70, 6, 4, "baseDeDatos"]
+}
+
+const aprobo = () =>{
+    for (materia in materias){
+        let asistencias = materias[materia][0]; //el materias[materia] es para recorrer el objeto y sus datos
+        let promedio = materias[materia][1];
+        let trabajos = materias[materia][2];
+
+        console.log(materias[materia][3]);      //El elemento 3 es el nombre de la materia
+
+        if (asistencias >= 90){
+            console.log("%c Asistencias en orden", "color:green");
+        }   else {
+            console.log("%c Falta asistencias", "color:red")
+        }
+
+        if (promedio >= 7){
+            console.log("%c Promedio correcto", "color:green");
+        }   else {
+            console.log("%c Promedio desaprobado", "color:red")
+        }
+
+        if (trabajos >= 5){
+            console.log("%c TPS en orden", "color:green");
+        }   else {
+            console.log("%c TPS insuficientes", "color:red")
+        }
+    }
+}
+aprobo();
