@@ -24,3 +24,16 @@ console.debug("Este método se utiliza para registrar mensajes de depuracion de 
 //          Limpieza de consola
 
 console.clear(); //Este mando lo podemos colocar tanto en el codigo como en la consola
+
+
+
+//          Agrupar mensajes
+
+console.group(); //Inicia la union que se puede expandir con el texto que indiquemos en dicho parametro.
+console.groupEnd(); //Cierra el grupo de union de texto.
+
+//Ejemplo a continuacion
+
+console.group("Mostrar información de los textos");
+console.log("UA: ", navigator.userAgent, "Lang: ", navigator.language);
+console.groupEnd();
