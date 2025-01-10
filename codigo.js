@@ -42,7 +42,19 @@ console.groupEnd();
 
 //          Contadores
 
-for (let i = 0; i < 5; i++){
-    console.count("test-loop"); //Inicia el conteo
+// for (let i = 0; i < 5; i++){
+//     console.count("test-loop"); //Inicia el conteo
+// }
+// console.countEnd("test-loop");  //Finaliza el conteo
+
+
+
+//          Test de velocidad
+
+// Existe un metodo que nos permite iniciar un test de velocidad, para verificar cuanto tarda en milisegundos en realizar una operacion
+
+console.time("test1");
+for (let i = 0; i < 10; i++){
+    console.log("test1", i);
 }
-console.countEnd("test-loop");  //Finaliza el conteo
+    console.timeEnd("test1");
