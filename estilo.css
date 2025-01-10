@@ -7,8 +7,20 @@ body {
 h1, h2{
     text-align: center;
     background: rgb(44, 44, 44);
+    opacity: 0.3;
     color: white;
     margin: 5% 15% 15%;
     padding: 30px 30px;
     border: 3px dashed white;
+}
+
+h1:hover{
+    opacity: 1;
+    background: orange;
+    color: black;
+}
+h2:hover{
+    opacity: 1;
+    background: orange;
+    color: black;
 }
