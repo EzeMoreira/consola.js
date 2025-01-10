@@ -99,3 +99,34 @@ const aprobo = () =>{
     }
 }
 aprobo();
+
+
+
+//          Ejemplo extra 2 de consola
+
+let tp = "1000 minutos para realizar trabajos practicos TPS";
+let estudio = "1000 minutos de estudio durante el cursado";
+let trabajo = "300 minutos en total trabajos en clase";
+let homework = "60 minutos para realizar actividades de casa";
+let descanso = "30 minutos de tiempo muerto para la persona";
+
+console.log("TAREAS");
+
+for (let i = 0; i < 15; i++){
+    if (i == 0){
+        console.group("Semana 1 finalizada");
+    }
+    console.groupCollapsed(" Dia " + (i+1));
+    console.log(trabajo);
+    console.log(descanso);
+    console.log(estudio);
+    console.log(tp);
+    console.log(homework);
+    console.groupEnd();
+    if (i == 7){
+        console.groupEnd();
+        console.groupCollapsed("Semana 2 por iniciar");
+    }
+}
+
+console.groupEnd();
